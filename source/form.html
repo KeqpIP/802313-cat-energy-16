@@ -4,11 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="logo page-header__logo">
+    <a class="logo page-header__logo" href="index.html">
       <img class="logo-image" src="http://placehold.it/33x36" width="33" height="36" alt="Логотип: Кэт энерджи">
     </a>
     <nav class="main-nav">
@@ -21,13 +22,13 @@
             <button class="main-nav__toggle--close visually-hidden" type="button">Закрыть меню</button>
           </li>
           <li class="site-list__item">
-            <a href="javascript:void(0)">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a>Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -42,13 +43,13 @@
       </p>
       <form action="https://echo.htmlacademy.ru" method="POST">
         <div class="program-selection__information info-cat">
-          <label for="program-name">Имя:*</label>
+          <label class="program-selection__input-label" for="program-name">Имя:*</label>
           <input class="program-selection__input" id="program-name" type="text" name="user" placeholder="Барсик"
             required>
-          <label for="program-weight">Вес (КГ):*</label>
+          <label class="program-selection__input-label" for="program-weight">Вес&nbsp;(КГ):*</label>
           <input class="program-selection__input" id="program-weight" type="number" name="weight" placeholder="7"
             required>
-          <label for="program-age">Возраст:</label>
+          <label class="program-selection__input-label" for="program-age">Возраст:</label>
           <input class="program-selection__input" id="program-age" type="number" name="age" placeholder="7">
         </div>
         <div class="program-selection__information info-program">
@@ -62,17 +63,17 @@
 
         <div class="info-owner">
           <h3 class="info-owner__header section-comment">Контактные данные (владельца кота)</h3>
-          <label for="program-email">E-mail:*</label>
+          <label class="program-selection__input-label" for="program-email">E-mail:*</label>
           <input class="program-selection__input" id="program-email" type="email" name="email"
             placeholder="kuklachev@gmail.com" required>
-          <label for="program-phone">Телефон:*</label>
+          <label class="program-selection__input-label" for="program-phone">Телефон:*</label>
           <input class="program-selection__input" id="program-phone" type="tel" name="phone"
             placeholder="8 (960) 900-60-90" required>
         </div>
 
         <div class="info-comment">
           <h3 class="info-comment__header section-comment">Комментарий</h3>
-          <textarea class="program-selection__input" id="program-comment"
+          <textarea class="program-selection__input--textarea" id="program-comment"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
 

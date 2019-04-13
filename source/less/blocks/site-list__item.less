@@ -1,0 +1,25 @@
+.site-list__item {
+    display: block;
+    width: 320px;
+    height: 66px;
+    padding: 25px 0;
+    font-family: @font-medium;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid @grey;
+
+    & a {
+        color: @black; 
+    }
+
+    & a:hover,
+    & a:focus {
+        color: fade(@black, 60%);
+    }
+    
+    & a:active {
+        color: fade(@black, 30%)
+    }
+}

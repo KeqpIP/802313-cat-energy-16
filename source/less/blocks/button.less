@@ -1,0 +1,30 @@
+.button {
+    display: block;
+    width: 280px;
+    height: 40px;
+    font-family: @font-regular;
+    line-height: 40px;
+    text-align: center;
+    color: @white;
+    text-transform: uppercase;
+    background-color: @green;
+
+    &:hover,
+    &:focus {
+        background-color: @dark-green; 
+    }
+
+    &:active {
+        color: fade(@white, 70%);
+    }
+
+    &--show-all {
+        color: @dark-grey;
+        background-color: @grey;
+
+        &:hover,
+        &:focus {
+            background-color: darken(@grey, 20%);   
+        }   
+    }
+}
